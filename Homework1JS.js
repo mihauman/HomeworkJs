@@ -6,9 +6,9 @@ const money = 500;
 maxPrice = Math.max(egg,carrot,onion);
 minPrice = Math.min(egg,carrot,onion);
 const sum = egg + carrot + onion;
-wholePart = Math.floor(egg,carrot,onion);
+wholePart = Math.floor(egg) + Math.floor(carrot) + Math.floor(onion);
 rest = money - sum;
-middlePrice = sum/(egg,carrot,onion);
+const middlePrice = sum / 3;
 thous = Math.ceil(sum / 100) * 100;
 
 if(minPrice % 2 !==0) {
